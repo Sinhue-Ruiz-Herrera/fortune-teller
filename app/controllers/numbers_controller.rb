@@ -3,11 +3,11 @@ class NumbersController < ApplicationController
     @zebra = Array.new
 
     5.times do
-      giraffe = rand(1...100)
-      
+      giraffe = rand(1...99)
+
       @zebra.push(giraffe)
     end
 
-    render({ :template => "lottery_stuff/woohoo.html.erb"})
-  end 
+    render({ :template => "lottery_stuff/woohoo.html.erb" })
+  end
 end
